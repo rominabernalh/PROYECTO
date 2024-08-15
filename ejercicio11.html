@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SEPHORA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: url('ruta/a/tu/imagen.jpg') no-repeat center center/cover;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            padding: 20px;
+            width: 80%;
+            position: relative;
+            left: 15%;
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 200px;
+        }
+        .producto {
+            border: 1px solid #f0eded;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #fffdfd;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        section{
+            background-color: #EBEADD;
+            width: 80%;
+            height: 100%;
+            position: relative;         
+            left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ejercicio10.html">Productos</a></li>
+                <li><a href="ejercicio13.html">Kits</a></li>
+                <li><a href="ejercicio12.html">Sobre Nosotros</a></li>
+                <li><a href="ejercicio11.html">Ofertas</a></li>
+                <li><a href="ejercicio9.html">Politica de Privacidad</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+        <div class="hero-text">
+          OFERTAS<div class="  "> </div> 
+
+        </div>
+
+    </div>
+
+
+
+
+<div class="container">
+    <h2></h2>
+    <div class="productos">
+        <div class="producto">
+            <img src="PRODUCTO1.jpg" alt="Producto 1">
+            <h3>RUBOR LIQUIDO "RARE BEAUTY"</h3>
+            <p>tono "love" </p>
+            <P>$600 </P>
+        </div>
+        <div class="producto">
+            <img src="PRODUCTO2.jpg" alt="Producto 2">
+            <h3>BALSAMO LABIAL</h3>
+            <p> labial hidratante en barra  de "coco</p>
+            <p></p>
+            <P>$250 </P>
+        </div>
+        <div class="producto">
+            <img src="PRODUCTO3.jpg" alt="Producto 3">
+            <h3> BASE "BORN THIS WAY" </h3>
+            <p>  base liquida  </p>
+            <P>$920 </P>
+        </div>
+        <div class="producto">
+            <img src="PRODUCTO4.jpg" alt="producto 4">
+            <h3> KIT "GLOW RECIPE"</h3>
+            <p> 2 productos  </p>
+            <p>bronceador corporal,iluminador liquido</p>
+            <p> $1600 </p>
+        </div>
+        
+
+        <!-- Puedes agregar más productos aquí -->
+
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pie de Página con Redes Sociales</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .content {
+        flex: 1;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    footer p {
+        margin: 0;
+    }
+    footer .social-links {
+        margin: 10px 0;
+    }
+    footer .social-links a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    footer .social-links a:hover {
+        color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+<div class="content">
+    <!-- Contenido principal de la página -->
+    <h1></h1>
+    <p></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    <div class="social-links">
+        <a href="https://es-la.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Sephora  </a>
+        
+        <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i>  Sephora  </a>
+        
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>  Sephora </a>
+        
+        
+    </div>
+</footer>
+</body>
+</html>
+
+            

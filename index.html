@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('ruta/a/tu/imagen.jpg') no-repeat center center/cover;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            padding: 20px;
+            width: 80%;
+            position:relative;
+            left: 15%;
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 200px;
+            text-align: center;
+        
+        }
+        .producto {
+            border: 1px solid #f0eded;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #fffdfd;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ejercicio10.html">Productos</a></li>
+                <li><a href="ejercicio13.html">Kits</a></li>
+                <li><a href="ejercicio12.html">Sobre Nosotros</a></li>
+                <li><a href="ejercicio11.html">Ofertas</a></li>
+                <li><a href="ejercicio9.html">Politica de Privacidad</a></li>
+               
+            </ul>
+        </nav>
+    </header>      
+
+
+       <div class="hero">
+        <div class="hero-text">
+            SEPHORA<div class="  ">  </div> 
+    
+
+        </div>
+    </div>
+
+
+
+  
+
+
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <style>
+        .carousel {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-images img {
+            width: 600px;
+            height: 600px;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .carousel-button.prev {
+            left: 0;
+        }
+        .carousel-button.next {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="CARRUSEL1.jpg" alt="Imagen 1">
+            <img src="CARRUSEL2.jpg" alt="Imagen 2">
+            <img src="CARRUSEL3.jpg" alt="Imagen 3">
+         
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-button next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <script>
+        let index = 0;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.carousel-images img');
+            if (n >= slides.length) index = 0;
+            if (n < 0) index = slides.length - 1;
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(-${index * 100}%)`;
+            });
+        }
+
+        function nextSlide() {
+            index++;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index--;
+            showSlide(index);
+        }
+
+        // Iniciar el carrusel automático
+        setInterval(nextSlide, 3000); // Cambiar de imagen cada 3 segundos
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="container">
+        <h2></h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="PRODUCTO1.jpg" alt="Producto 1">
+                <h3>RUBOR LIQUIDO "RARE BEAUTY"</h3>
+                <p>  </p>
+                <P>$600 </P>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO2.jpg" alt="Producto 2">
+                <h3>BALSAMO LABIAL</h3>
+                <p>  </p>
+                <P>$250 </P>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO3.jpg" alt="Producto 3">
+                <h3> BASE "BORN THIS WAY" </h3>
+                <p>    </p>
+                <P>$920 </P>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO4.jpg" alt="producto 4">
+                <h3> KIT DE LIMPIEZA FACIAL "GLOW RECIPE"</h3>
+                <p>   </p>
+                <p> $1600 </p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO5.jpg" alt="producto 5">
+                <h3> BRILLO LABIAL</h3>
+                <p>  </p>
+                <p> $400 </p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO6.jpg" alt="producto 6">
+                <h3> BRILLO LABIAL "FENTY BEAUTY"</h3>
+                <p>  </p>
+                <p> $650</p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO7.jpg"alt="producto 7">
+                <h3>KIT DE LMPIEZA FACIAL</h3>
+                <p></p>
+                <p>$1000</p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO8.jpg"alt="producto 8">
+                <h3>KIT DE MAQUILLAJE</h3>
+                <p></p>
+                <p>$1100</p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO9.jpg"alt="producto 9">
+                <h3>LOCION CORPORAL "SOL DE JANEIRO"</h3>
+                <p></p>
+                <p>$890</p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO10.jpg"alt="producto 10">
+                <h3>PERFUME "VALENTINO"</h3>
+                <p></p>
+                <p>$3100</p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO11.jpg"alt="producto 11">
+                <h3>KIT DE MAQUILLAJE "MILK"</h3>
+                <p></p>
+                <p>$850</p>
+            </div>
+            <div class="producto">
+                <img src="PRODUCTO12.jpg"alt="producto 12">
+                <h3>PERFUME "COCO CHANEL"</h3>
+                <p></p>
+                <p>$2800</p>
+            </div>
+
+
+            <!-- Puedes agregar más productos aquí -->
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie de Página con Redes Sociales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-links {
+            margin: 10px 0;
+        }
+        footer .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        footer .social-links a:hover {
+            color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Contenido principal de la página -->
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://es-la.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Sephora  </a>
+            
+            <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i>  Sephora  </a>
+            
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>  Sephora </a>
+            
+            
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
